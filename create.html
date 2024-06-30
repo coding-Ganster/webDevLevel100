@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create account</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form action="aciton.php">
+        <label for="username">Username:</label>
+        <br>
+        <input type="text" name="username" id="username" placeholder="enter name" class="controlBox" pattern="[A-Za-z]{3,}" required>
+        <br><br>
+        <label for="Mobile">Mobile</label>
+        <br>
+        <input type="tel" id="mobile" name="mobile" placeholder="number here" pattern="[0-9]{10}" required class="controlBox">
+        <br><br>
+        <label for="email">email</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="name@gmail.com" class="controlBox" required>
+        <br><br>
+        
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" placeholder="secret code" class="controlBox" required class="pin1">
+        <br><br>
+        <input type="password" id="new password" name="password" placeholder="confirm password" class="controlBox" required class="pin2">
+        <br><br>
+       
+        <input type="submit" value="create account" onsubmit="check()">
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkAgeSoftware</title>
+    <style>
+        body{
+            color: #fff;
+            text-align: center;
+            background-color: #000;
+            animation: changeBorder 3s linear infinite;
+        }
+        button{
+            background: #000;
+            color: #fff;
+            border: 1px solid blue;
+            border-radius: 7px;
+            padding: 5px;
+            cursor: pointer;
+          
+        }
+        @keyframes changeBorder{
+            50%{
+                background-color: rgb(250,0,0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome, check your current age now </h1>
+    <br><br>
+    <button type="button" onclick="checkAge()">Click here</button>
+    <script>
+        // check age
+      function checkAge(){
+        const userName = prompt('please enter your name');
+        const yearOfBirth = Number(prompt('Please enter only your year of birth'));
+        const currentYear = new Date().getFullYear();
+        document.write(`${userName} you are`);
+        document.write('<br>');
+        document.write( currentYear - yearOfBirth + ' ' + 'years old now');
+      }
+       
+    </script>
+</body>
+</html>

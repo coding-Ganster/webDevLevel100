@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects blog</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+<strong id="bars">&#9776;</strong>
+    </label>
+   <nav class="sidebar">
+    <p>codingGanster<img src="images/aloko.png" alt="picture"></p>
+    <p id="time"></p>
+    <p>Projects porfolio</p>
+    <ul>
+        <li><a href="ageChecker.html">AgeChecker</a></li>
+     <li><a href="quizApp.html">QuizApp</a></li>
+        <li><a href="todoApp.html">ToDOListApp</a></li>
+        <li><a href="cal.html">CalculatorApp</a></li>
+        <li><a href="form.html">FormApp</a></li>
+        <li><a href="validationJS.html">FormValid1</a></li>
+        <li><a href="ValWithHTML.html">FormValid2</a></li>
+    </ul>
+   </nav>
+ <main>
+    <section id="bgVideo">
+        <p id="date"></p><strong>This video is muted,you can unmute it</strong>
+        <video src="videos/sg2.mp4" controls autoplay muted loop></video>
+    </section>
+ </main>
+ <script>
+    setInterval(function(){
+        const time = document.querySelector('#time');
+        time.innerHTML = new Date().toLocaleTimeString();
+    })
+
+   function yesMe(){
+        const date = document.querySelector('#date');
+        date.innerHTML = new Date().toDateString();
+    }
+    // display code output
+    yesMe();
+
+ </script>
+</body>
+</html>
